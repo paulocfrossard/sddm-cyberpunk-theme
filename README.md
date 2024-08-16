@@ -11,6 +11,7 @@ You can easily change how it looks in **[config](./theme.conf)**.
 Here are some examples:
 
 ![Preview](./Previews/preview1_.png)
+
 ![Preview](./Previews/preview2_.png)
 
 ### Dependencies
