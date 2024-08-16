@@ -24,45 +24,45 @@ qt6-5compat qt6-declarative qt6-svg sddm
 
 Clone this repository, copy fonts to `/usr/share/fonts/`:
 
-   ```sh
-   sudo git clone https://github.com/paulocfrossard/sddm-cyberpunk-theme /usr/share/sddm/themes/sddm-cyberpunk-theme
-   sudo cp /usr/share/sddm/themes/sddm-cyberpunk-theme/Fonts/* /usr/share/fonts/
-   ```
+```sh
+sudo git clone https://github.com/paulocfrossard/sddm-cyberpunk-theme /usr/share/sddm/themes/sddm-cyberpunk-theme
+sudo cp /usr/share/sddm/themes/sddm-cyberpunk-theme/Fonts/* /usr/share/fonts/
+```
 
 ### Set locale
 
-    Edit locate in /usr/share/sddm/themes/sddm-cyberpunk-theme/theme.conf
+Edit locate in /usr/share/sddm/themes/sddm-cyberpunk-theme/theme.conf
 
-    ```sh
-    sudo vim /usr/share/sddm/themes/sddm-cyberpunk-theme/theme.conf
-    ```
+```sh
+sudo vim /usr/share/sddm/themes/sddm-cyberpunk-theme/theme.conf
+```
 
-    Edit youLocale, use [doc QT](https://doc.qt.io/qt-5/qlocale.html#Country-enum)
+Edit youLocale, use [doc QT](https://doc.qt.io/qt-5/qlocale.html#Country-enum)
 
-    ```conf
-        Locale="youLocale"
-    ```
-    Save and test
+```conf
+    Locale="youLocale"
+```
+Save and test
 
 ### Test
 
-    ```sh
-    sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sddm-cyberpunk-theme
-    ```
+```sh
+sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sddm-cyberpunk-theme
+```
 
 ### Aplly
 Then edit `/etc/sddm.conf`, so that it looks like this:
 
-    ```sh
-    echo "[Theme]
-    Current=sddm-cyberpunk-theme" | sudo tee /etc/sddm.conf
-    ```
+```sh
+echo "[Theme]
+Current=sddm-cyberpunk-theme" | sudo tee /etc/sddm.conf
+```
 
 ### Credits
 
 Based on the theme [`Sugar Dark for SDDM`](https://github.com/MarianArlt/sddm-sugar-dark) by **MarianArlt**.
 
-Based on the theme ['sddm-astronaut-theme'](https://github.com/Keyitdev/sddm-astronaut-theme) by **Keyitdev**.
+Based on the theme [`sddm-astronaut-theme`](https://github.com/Keyitdev/sddm-astronaut-theme) by **Keyitdev**.
 
 ### License
 
