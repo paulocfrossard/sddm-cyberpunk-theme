@@ -1,4 +1,4 @@
-# sddm-astronaut-theme
+# sddm-cyberpunk-theme
 
 A theme for the [SDDM login manager](https://github.com/sddm/sddm).
 
@@ -12,36 +12,55 @@ Here are some examples:
 
 ![Preview](./Previews/preview1.png)
 ![Preview](./Previews/preview2.png)
-![Preview](./Previews/preview3.png)
-![Preview](./Previews/preview4.png)
 
 ### Dependencies
 
 ```sh
 qt6-5compat qt6-declarative qt6-svg sddm
 ```
-> qt6-declarative replaces qt6-quickcontrols2
-> https://archlinux.org/packages/extra/x86_64/qt6-declarative/
 
 ### Install
 
-1. Clone this repository, copy fonts to `/usr/share/fonts/`:
+Clone this repository, copy fonts to `/usr/share/fonts/`:
 
    ```sh
-   sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
-   sudo cp /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
+   sudo git clone https://github.com/paulocfrossard/sddm-cyberpunk-theme /usr/share/sddm/themes/sddm-cyberpunk-theme
+   sudo cp /usr/share/sddm/themes/sddm-cyberpunk-theme/Fonts/* /usr/share/fonts/
    ```
 
-2. Then edit `/etc/sddm.conf`, so that it looks like this:
+### Set locale
+
+    Edit locate in /usr/share/sddm/themes/sddm-cyberpunk-theme/theme.conf
+
+    ```sh
+    sudo vim /usr/share/sddm/themes/sddm-cyberpunk-theme/theme.conf
+    ```
+
+    Edit youLocale, use [doc QT](https://doc.qt.io/qt-5/qlocale.html#Country-enum)
+
+    ```conf
+        Locale="youLocale"
+    ```
+    Save and test
+
+### Test
+
+    ```sh
+    sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sddm-cyberpunk-theme
+    ```
+
+### Aplly
+Then edit `/etc/sddm.conf`, so that it looks like this:
 
     ```sh
     echo "[Theme]
-    Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
+    Current=sddm-cyberpunk-theme" | sudo tee /etc/sddm.conf
     ```
 
 ### Credits
 
 Based on the theme [`Sugar Dark for SDDM`](https://github.com/MarianArlt/sddm-sugar-dark) by **MarianArlt**.
+Based on the theme ['sddm-astronaut-theme'](https://github.com/Keyitdev/sddm-astronaut-theme) by **Keyitdev**
 
 ### License
 
