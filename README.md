@@ -61,7 +61,8 @@ Then edit `/etc/sddm.conf`, so that it looks like this:
 ### Credits
 
 Based on the theme [`Sugar Dark for SDDM`](https://github.com/MarianArlt/sddm-sugar-dark) by **MarianArlt**.
-Based on the theme ['sddm-astronaut-theme'](https://github.com/Keyitdev/sddm-astronaut-theme) by **Keyitdev**
+
+Based on the theme ['sddm-astronaut-theme'](https://github.com/Keyitdev/sddm-astronaut-theme) by **Keyitdev**.
 
 ### License
 
